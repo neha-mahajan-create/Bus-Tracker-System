@@ -1,0 +1,114 @@
+/* ===========================
+   Driver Login Page
+=========================== */
+
+.driver-login-page{
+    min-height: calc(100vh - 85px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: linear-gradient(
+        135deg,
+        #d6f5e3 0%,
+        #e8f7ff 50%,
+        #fff8dc 100%
+    );
+
+    padding:20px;
+}
+
+/* Card */
+
+.driver-login-card{
+    width:100%;
+    max-width:450px;
+
+    border:none;
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* Header */
+
+.driver-login-header{
+    background:#198754;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.driver-login-header svg{
+    font-size:60px;
+}
+
+.driver-login-header h2{
+    margin-top:15px;
+    font-weight:700;
+}
+
+.driver-login-header p{
+    margin-top:8px;
+    opacity:.9;
+}
+
+/* Form */
+
+.driver-login-body{
+    padding:30px;
+}
+
+.driver-login-body label{
+    font-weight:600;
+    margin-bottom:6px;
+}
+
+.driver-login-body .form-control{
+    height:48px;
+    border-radius:10px;
+}
+
+.driver-login-body .form-control:focus{
+    border-color:#198754;
+    box-shadow:0 0 0 .2rem rgba(25,135,84,.25);
+}
+
+/* Button */
+
+.driver-login-btn{
+    width:100%;
+    height:50px;
+
+    background:#198754 !important;
+    border:none !important;
+
+    border-radius:10px;
+
+    font-size:18px;
+    font-weight:600;
+}
+
+.driver-login-btn:hover{
+    background:#157347 !important;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.driver-login-card{
+    margin:10px;
+}
+
+.driver-login-header{
+    padding:25px;
+}
+
+.driver-login-body{
+    padding:20px;
+}
+
+}

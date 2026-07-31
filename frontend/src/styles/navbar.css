@@ -1,0 +1,183 @@
+/* ===========================
+   Navbar
+=========================== */
+
+.custom-navbar {
+  background: #ffffff;
+  height: 85px;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2563EB !important;
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+
+    transform: translateY(10px);
+}
+
+.logo:hover {
+  color: #1d4ed8 !important;
+}
+
+/* ===========================
+   Navigation Links
+=========================== */
+
+.navbar-nav .nav-link {
+  color: #374151 !important;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 14px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #2563eb !important;
+}
+
+/* Underline Animation */
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #2563eb;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===========================
+   Login Button
+=========================== */
+
+.login-btn {
+  background: #dc2626 !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #b91c1c !important;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   Register Button
+=========================== */
+
+.register-btn {
+  background: #2563eb !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #1d4ed8 !important;
+  transform: translateY(-2px);
+}
+/* ===========================
+   Driver Button
+=========================== */
+
+.driver-btn {
+  background: #16a34a !important;
+  border: none !important;
+  color: white !important;
+
+  padding: 10px 26px !important;
+
+  border-radius: 30px;
+
+  font-weight: 600;
+  
+  
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+  transition: all 0.3s ease;
+}
+
+.driver-btn:hover {
+  background:#15803d  !important;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   Navbar Toggle
+=========================== */
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* ===========================
+   Mobile View
+=========================== */
+
+@media (max-width: 991px) {
+
+  .custom-navbar{
+    background: #ffffff;
+    height: 85px;
+    padding: 0;
+}
+  .navbar-nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 12px 0;
+  }
+
+  .navbar-nav {
+    flex-wrap: nowrap !important;
+  }
+
+  .login-btn,
+  .register-btn,
+  .driver-btn{
+    height:45px;
+    padding:0 26px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+}

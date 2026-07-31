@@ -1,0 +1,28 @@
+.auth-page{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0d6efd,#6f42c1);
+}
+
+.auth-left{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+}
+
+.auth-box{
+    width:100%;
+    max-width:450px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.form-control{
+    height:50px;
+    border-radius:10px;
+}
+
+.btn{
+    border-radius:10px;
+    height:50px;
+}
