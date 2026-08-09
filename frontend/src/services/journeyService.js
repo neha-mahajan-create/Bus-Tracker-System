@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5001/api/journeys";
+const API = "https://bus-tracker-system.onrender.com/api/journeys";
 
 export const getRoutes = () =>
   axios.get(API);

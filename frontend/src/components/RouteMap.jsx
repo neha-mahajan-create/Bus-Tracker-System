@@ -70,7 +70,7 @@ function RouteMap({ onBusUpdate }) {
   const getCoordinates = async (place) => {
 
     const res = await axios.get(
-      `http://localhost:5001/api/geocode?place=${encodeURIComponent(place)}`
+      `https://bus-tracker-system.onrender.com/api/geocode?place=${encodeURIComponent(place)}`
     );
 
     return {
@@ -92,7 +92,7 @@ function RouteMap({ onBusUpdate }) {
       if (!selectedBus) return;
 
       const journeyRes = await axios.get(
-        `http://localhost:5001/api/map?route=${encodeURIComponent(
+        `https://bus-tracker-system.onrender.com/api/map?route=${encodeURIComponent(
           selectedBus.route
         )}`
       );
@@ -118,7 +118,7 @@ function RouteMap({ onBusUpdate }) {
       setMarkers(coords);
 
       const osrmRes = await axios.post(
-        "http://localhost:5001/api/road-route",
+        "https://bus-tracker-system.onrender.com/api/road-route",
         {
           coordinates: coords.map(point => [
             point.lng,
@@ -180,7 +180,7 @@ useEffect(() => {
         try {
 
             const res = await axios.get(
-                `http://localhost:5001/api/driver/location/${selectedBus.busNumber}`
+                `https://bus-tracker-system.onrender.com/api/driver/location/${selectedBus.busNumber}`
             );
 
             console.log("========== LIVE GPS ==========");

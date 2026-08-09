@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5001/api/auth";
+const API = "https://bus-tracker-system.onrender.com/api/auth";
 
 // Register
 export const registerUser = (userData) => {

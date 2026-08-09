@@ -30,7 +30,7 @@ function BusForm({
       try {
 
         const res = await axios.get(
-          "http://localhost:5001/api/journeys"
+          "https://bus-tracker-system.onrender.com/api/journeys"
         );
 
         setRoutes(res.data);

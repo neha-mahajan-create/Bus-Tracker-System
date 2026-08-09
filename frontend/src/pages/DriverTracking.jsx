@@ -34,7 +34,7 @@ function DriverTracking() {
         try {
 
              const response = await axios.put(
-            "http://localhost:5001/api/driver/location",
+            "https://bus-tracker-system.onrender.com/api/driver/location",
             {
              busNumber: driver.bus.busNumber,
               latitude: position.coords.latitude + (Math.random() * 0.001),

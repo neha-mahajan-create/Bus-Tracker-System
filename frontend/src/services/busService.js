@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5001/api/buses";
+const API = "https://bus-tracker-system.onrender.com/api/buses";
 
 export const getBuses = () => axios.get(API);
 

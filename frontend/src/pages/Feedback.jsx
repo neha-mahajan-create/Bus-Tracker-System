@@ -25,7 +25,7 @@ const Feedback = () => {
 
       // Send feedback to backend
       const response = await axios.post(
-        "http://localhost:5001/api/feedback/add",
+        "https://bus-tracker-system.onrender.com/api/feedback/add",
         {
           userId: user.id,
           rating,

@@ -13,7 +13,7 @@ function AdminFeedback() {
 
   const fetchFeedbacks = async () => {
     try {
-      const res = await axios.get("http://localhost:5001/api/feedback");
+      const res = await axios.get("https://bus-tracker-system.onrender.com/api/feedback");
 
       setFeedbacks(res.data);
       setLoading(false);

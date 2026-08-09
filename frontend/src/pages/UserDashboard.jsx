@@ -43,7 +43,7 @@ function UserDashboard() {
       const user = JSON.parse(localStorage.getItem("user"));
 
       const res = await axios.get(
-        `http://localhost:5001/api/feedback/user/${user.id}`
+        `https://bus-tracker-system.onrender.com/api/feedback/user/${user.id}`
       );
 
       setLatestFeedback(res.data || null);

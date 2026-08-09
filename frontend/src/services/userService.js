@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5001/api/users";
+const API = "https://bus-tracker-system.onrender.com/api/users";
 
 export const getUsers = () =>
   axios.get(API);

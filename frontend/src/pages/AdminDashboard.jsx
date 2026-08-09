@@ -45,7 +45,7 @@ function AdminDashboard() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5001/api/dashboard/stats"
+        "https://bus-tracker-system.onrender.com/api/dashboard/stats"
       );
 
       setStats(res.data);
@@ -60,7 +60,7 @@ function AdminDashboard() {
   try {
 
     const res = await axios.get(
-      "http://localhost:5001/api/activities"
+      "https://bus-tracker-system.onrender.com/api/activities"
     );
 
     setActivities(res.data);
