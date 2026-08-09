@@ -1,5 +1,5 @@
 const Bus = require("../models/Bus");
-const User = require("../models/User");
+const User = require("../models/user");
 const Feedback = require("../models/Feedback");
 const Journey = require("../models/Journey");
 

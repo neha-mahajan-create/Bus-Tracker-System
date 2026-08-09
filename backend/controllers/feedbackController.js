@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Feedback = require("../models/Feedback");
-const User = require("../models/User");
+const User = require("../models/user");
 
 // ==========================
 // Add Feedback
