@@ -1,6 +1,6 @@
 const Bus = require("../models/Bus");
 const User = require("../models/User");
-const Journey = require("../models/Journey");
+const Journey = require("../models/journey");
 const Feedback = require("../models/Feedback");
 
 const getRecentActivities = async (req, res) => {

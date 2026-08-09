@@ -1,7 +1,7 @@
 const Bus = require("../models/Bus");
 const User = require("../models/user");
 const Feedback = require("../models/Feedback");
-const Journey = require("../models/Journey");
+const Journey = require("../models/journey");
 
 const getDashboardStats = async (req, res) => {
   try {
