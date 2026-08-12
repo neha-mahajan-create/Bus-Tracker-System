@@ -12,7 +12,7 @@ import {
   FaRoute,
   FaCommentDots,
   FaPlus,
-  FaEye,
+  
 } from "react-icons/fa";
 
 import { Row, Col, Card, Button } from "react-bootstrap";
